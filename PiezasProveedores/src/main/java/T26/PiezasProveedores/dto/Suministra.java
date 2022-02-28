@@ -1,7 +1,6 @@
 package T26.PiezasProveedores.dto;
 
 import javax.persistence.*;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * 
