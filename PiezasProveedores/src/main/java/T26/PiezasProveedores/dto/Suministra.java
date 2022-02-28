@@ -14,7 +14,7 @@ public class Suministra {
 	//Atributos proveedores
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String id;
+	private int id;
 
 	@ManyToOne
     @JoinColumn(name="CodigoPieza")
@@ -30,18 +30,18 @@ public class Suministra {
 	public Suministra() {
 	}
 
-	public Suministra(String id, Piezas pieza, Proveedores proveedor, int precio) {
+	public Suministra(int id, Piezas pieza, Proveedores proveedor, int precio) {
 		this.id = id;
 		this.pieza = pieza;
 		this.proveedor = proveedor;
 		this.precio = precio;
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
