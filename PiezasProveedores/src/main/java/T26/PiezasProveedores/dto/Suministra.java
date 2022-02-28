@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Table(name="suministra")
 public class Suministra {
 	
-	//Atributos proveedores
+	//Atributos suministra
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
