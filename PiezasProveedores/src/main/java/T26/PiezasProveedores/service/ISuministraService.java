@@ -11,10 +11,6 @@ public interface ISuministraService {
 
 	public Suministra suministraXID(Long id);
 
-	public List<Suministra> listarSuministraPiezas(Piezas pieza);
-
-	public List<Suministra> listarSuministraProveedores(Proveedores proveedor);
-
 	public Suministra actualizarSuministra(Suministra suministra);
 
 	public void eliminarSuministra(Long id);

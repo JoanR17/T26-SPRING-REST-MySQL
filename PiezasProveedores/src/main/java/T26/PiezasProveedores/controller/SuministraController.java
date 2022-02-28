@@ -22,26 +22,6 @@ public class SuministraController {
 		return suministraServiceImpl.listarSuministra();
 	}
 
-	@GetMapping("/suministra/piezas/{idPieza}")
-	public List<Suministra> listarSuministraPiezas(@PathVariable(name = "idPieza") Long id) 
-	{
-		Piezas pieza = new Piezas();
-		
-		pieza.setId(id);
-		
-		return suministraServiceImpl.listarSuministraPiezas(pieza);
-	}
-
-	@GetMapping("/suministra/proveedores/{idProveedor}")
-	public List<Suministra> listarSuministraProveedores(@PathVariable(name = "idProveedor") String id) 
-	{
-		Proveedores proveedores = new Proveedores();
-		
-		proveedores.setId(id);
-		
-		return suministraServiceImpl.listarSuministraProveedores(proveedores);
-	}
-
 	@PostMapping("/suministra")
 	public Suministra salvarSuministra(@RequestBody Suministra suministra) 
 	{
