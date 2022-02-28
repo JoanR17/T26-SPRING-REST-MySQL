@@ -46,8 +46,6 @@ public class Suministra {
 		this.id = id;
 	}
 
-	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "Piezas")
 	public Piezas getPieza() {
 		return pieza;
 	}
@@ -56,8 +54,6 @@ public class Suministra {
 		this.pieza = pieza;
 	}
 
-	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "Proveedores")
 	public Proveedores getProveedor() {
 		return proveedor;
 	}

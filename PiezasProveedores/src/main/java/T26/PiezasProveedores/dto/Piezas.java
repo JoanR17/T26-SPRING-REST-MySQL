@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /**
  * 
  * @author JOAN
@@ -47,6 +49,16 @@ public class Piezas {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+	@JsonIgnore
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "Suministra")
+	public List<Suministra> getSuministra() {
+		return suministra;
+	}
+
+	public void setSuministra(List<Suministra> suministra) {
+		this.suministra = suministra;
 	}
 
 	@Override
