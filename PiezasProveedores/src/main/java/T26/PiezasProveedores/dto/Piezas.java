@@ -30,9 +30,10 @@ public class Piezas {
 	public Piezas() {
 	}
 
-	public Piezas(Long id, String nombre) {
+	public Piezas(Long id, String nombre, List<Suministra> suministra) {
 		this.id = id;
 		this.nombre = nombre;
+		this.suministra = suministra;
 	}
 
 	public Long getId() {

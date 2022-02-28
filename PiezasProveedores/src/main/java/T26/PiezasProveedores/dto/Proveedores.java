@@ -30,9 +30,10 @@ public class Proveedores {
 	public Proveedores() {
 	}
 
-	public Proveedores(String id, String nombre) {
+	public Proveedores(String id, String nombre, List<Suministra> suministra) {
 		this.id = id;
 		this.nombre = nombre;
+		this.suministra = suministra;
 	}
 
 	public String getId() {
