@@ -27,7 +27,7 @@ public class SuministraServiceImpl implements ISuministraService {
 	}
 
 	@Override
-	public Suministra suministraXID(Long id) 
+	public Suministra suministraXID(int id) 
 	{
 		return iSuministraDAO.findById(id).get();
 	}
@@ -39,7 +39,7 @@ public class SuministraServiceImpl implements ISuministraService {
 	}
 
 	@Override
-	public void eliminarSuministra(Long id) 
+	public void eliminarSuministra(int id) 
 	{
 		iSuministraDAO.deleteById(id);
 	}

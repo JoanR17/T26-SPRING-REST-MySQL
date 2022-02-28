@@ -30,7 +30,7 @@ public class SuministraController {
 	}
 
 	@GetMapping("/suministra/{id}")
-	public Suministra suministraXID(@PathVariable(name = "id") Long id) 
+	public Suministra suministraXID(@PathVariable(name = "id") int id) 
 	{
 
 		Suministra suministra_xid = new Suministra();
@@ -43,7 +43,7 @@ public class SuministraController {
 	}
 
 	@PutMapping("/suministra/{id}")
-	public Suministra actualizarSuministra(@PathVariable(name = "id") Long id, @RequestBody Suministra suministra) 
+	public Suministra actualizarSuministra(@PathVariable(name = "id") int id, @RequestBody Suministra suministra) 
 	{
 
 		Suministra suministra_seleccionado = new Suministra();
@@ -64,7 +64,7 @@ public class SuministraController {
 	}
 
 	@DeleteMapping("/suministra/{id}")
-	public void eliminarSuministra(@PathVariable(name = "id") Long id) 
+	public void eliminarSuministra(@PathVariable(name = "id") int id) 
 	{
 		suministraServiceImpl.eliminarSuministra(id);
 	}

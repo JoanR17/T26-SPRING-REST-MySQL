@@ -11,9 +11,9 @@ public interface ISuministraService {
 
 	public Suministra guardarSuministra(Suministra suministra);
 
-	public Suministra suministraXID(Long id);
+	public Suministra suministraXID(int id);
 
 	public Suministra actualizarSuministra(Suministra suministra);
 
-	public void eliminarSuministra(Long id);
+	public void eliminarSuministra(int id);
 }
