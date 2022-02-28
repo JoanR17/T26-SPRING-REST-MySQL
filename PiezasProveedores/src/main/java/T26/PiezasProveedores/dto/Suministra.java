@@ -8,7 +8,7 @@ import javax.persistence.*;
  *
  */
 @Entity
-@Table(name="proveedores")
+@Table(name="suministra")
 public class Suministra {
 	
 	//Atributos proveedores

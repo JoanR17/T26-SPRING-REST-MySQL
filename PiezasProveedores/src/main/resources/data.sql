@@ -25,3 +25,7 @@ create table suministra(
     KEY IdProveedor_idx (IdProveedor),
     CONSTRAINT IdProveedor_idx FOREIGN KEY (IdProveedor) REFERENCES proveedores (Id)
 );
+
+INSERT INTO `piezas_proveedores`.`piezas` (`Id`, `Nombre`) VALUES (1, "Procesador");
+INSERT INTO `piezas_proveedores`.`proveedores` (`Id`, `Nombre`) VALUES ("abcd", "Intel");
+INSERT INTO `piezas_proveedores`.`suministra` (`Id`, `CodigoPieza`, `IdProveedor`, `Precio`) VALUES (1, 1, "abcd", 350);
