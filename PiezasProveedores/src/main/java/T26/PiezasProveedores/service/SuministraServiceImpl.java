@@ -33,6 +33,18 @@ public class SuministraServiceImpl implements ISuministraService {
 	}
 
 	@Override
+	public List<Suministra> listarSuministraPiezas(Piezas pieza) 
+	{
+		return iSuministraDAO.findByPieza(pieza);
+	}
+
+	@Override
+	public List<Suministra> listarSuministraProveedores(Proveedores proveedor) 
+	{
+		return iSuministraDAO.findByProveedor(proveedor);
+	}
+
+	@Override
 	public Suministra actualizarSuministra(Suministra suministra) 
 	{
 		return iSuministraDAO.save(suministra);
